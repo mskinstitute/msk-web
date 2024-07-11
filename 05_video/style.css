@@ -1,0 +1,98 @@
+body{
+  background-color: #002060;
+}
+
+header {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-family: Arial;
+  color: white !important;
+}
+
+header>h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+header>p>span {
+  color: red;
+}
+
+header>p {
+  margin: 0;
+}
+
+.conteudo__geral {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  margin: 300px 150px;
+}
+.elemento__interno-borda {
+  height: 300px;
+  width: 300px;
+  background: transparent;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.elemento__interno-borda:hover {
+  border: 2px solid #002060;
+  height: 290px;
+  width: 290px;
+}
+.cartao {
+  height: 300px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  position: relative;
+}
+.cartao0 {
+  background: #fff url("myImage.png")
+    center center no-repeat;
+  background-size: 300px;
+}
+.cartao0:hover {
+  background: #fff url("myImage.png")
+    left center no-repeat;
+  background-size: 450px;
+}
+.cartao0:hover h2 {
+  opacity: 1;
+}
+.cartao0:hover .fa {
+  opacity: 1;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  color: tomato;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.caixa__icones {
+  position: absolute;
+  fill: #002060;
+  color: #002060;
+  height: 130px;
+  bottom: 10px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

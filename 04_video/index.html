@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Icons Animation - @mskinstitute</title>
+    <style>
+
+        body {
+            background-color: #212123;
+        }
+
+        header {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            font-family: Arial;
+            color: white;
+        }
+
+        header>h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header>p>span {
+            color: lawngreen;
+        }
+
+        header>p {
+            margin: 0;
+        }
+
+        .container {
+            display: inline-flex;
+            border-bottom: 4px solid #EFEFEF;
+            border-radius: 5px;
+            margin-top: 400px;
+            margin-left: 80px;
+            
+        }
+
+        .container img {
+            width: 60px;
+            filter: drop-shadow(0px 0px 1px #4b4b50);
+            animation: upDown 3s linear infinite;
+        }
+
+        @keyframes upDown {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-23px);
+            }
+        }
+
+        .container img:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        .container img:nth-child(3) {
+            animation-delay: .4s;
+        }
+
+        .container img:nth-child(4) {
+            animation-delay: .6s;
+        }
+
+        .container img:nth-child(5) {
+            animation-delay: .8s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MSK Institute</h2>
+        <p>Best for learn <span>Coding</span> in Shikohabad</p>
+    </header>
+
+    <div class="container">
+        <img src="./ic-html.png">
+        <img src="./ic-css.png">
+        <img src="./ic-js.png">
+        <img src="./ic-git.png">
+        <img src="./ic-react.png">
+    </div>
+</body>
+
+</html>
