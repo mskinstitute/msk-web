@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(221, 127, 163);
+    font-family: 'Open Sans',sans-serif;
+}
+.emoji-toggle{
+    position: relative;
+    width: 60px;
+    margin: 40px auto;
+}
+.emoji-toggle .well{
+    display: block;
+    background: #eee;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.emoji-toggle .toggle{
+    opacity: 0;
+    border: 0;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+}
+.emoji-toggle .toggle ~ .emoji:before{
+    content: "🐱";
+    position: absolute;
+    left: 0;
+    top: -15px;
+    font-size: 40px;
+    transition: 0.2s;
+}
+.emoji-toggle .toggle:checked ~ .emoji:before {
+    left: 100%;
+    margin-left: -1em;
+  }
+  .emoji-toggle .toggle ~ label {
+    white-space: nowrap;
+  }
+  .emoji-toggle .toggle ~ label:before {
+    position: absolute;
+    right: 100%;
+    margin-right: 5px;
+    top: 0;
+  }
+  .emoji-toggle .toggle ~ label:after {
+    position: absolute;
+    left: 100%;
+    margin-left: 5px;
+    top: 0;
+  }
+  
+  .emoji-people .toggle ~ .emoji:before {
+    content: "👩‍💻";
+  }
+  .emoji-people .toggle:checked ~ .emoji:before {
+    content: "👩‍⚕️";
+  }
+  .emoji-people .toggle ~ label:before {
+    content: "Programmer";
+  }
+  .emoji-people .toggle ~ label:after {
+    content: "Doctor";
+  }
+  
+  .emoji-nature .toggle ~ .emoji:before {
+    content: "🌑";
+  }
+  .emoji-nature .toggle:checked ~ .emoji:before {
+    content: "🌞";
+  }
+  .emoji-nature .toggle ~ label:before {
+    content: "Night";
+  }
+  .emoji-nature .toggle ~ label:after {
+    content: "Day";
+  }
+  
+  .emoji-food .toggle ~ .emoji:before {
+    content: "🍔";
+  }
+  .emoji-food .toggle:checked ~ .emoji:before {
+    content: "🍕";
+  }
+  .emoji-food .toggle ~ label:before {
+    content: "Burger";
+  }
+  .emoji-food .toggle ~ label:after {
+    content: "Pizza";
+  }
+  
+  .emoji-animal .toggle ~ .emoji:before {
+    content: "🦄";
+  }
+  .emoji-animal .toggle:checked ~ .emoji:before {
+    content: "🐴";
+  }
+  .emoji-animal .toggle ~ label:before {
+    content: "Unicorn";
+  }
+  .emoji-animal .toggle ~ label:after {
+    content: "Horse";
+  }
+  
+  .emoji-happy .toggle ~ .emoji:before {
+    content: "😄";
+  }
+  .emoji-happy .toggle:checked ~ .emoji:before {
+    content: "😠";
+  }
+  .emoji-happy .toggle ~ label:before {
+    content: "Happy";
+  }
+  .emoji-happy .toggle ~ label:after {
+    content: "Mad";
+  }
+
+  .buttons {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    gap: 10px 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+button {
+    background-color: #002060;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 65px;
+}
+
+header {
+    position: absolute;
+    top: -0;
+    color: white;
+}
