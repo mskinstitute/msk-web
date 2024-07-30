@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Text Animation - @mskinstitute</title>
+    <style>
+        * {
+            font-family: "Verdana", sans-serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+
+        html {
+            padding: 3rem;
+            background-color: #212123;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #EFEFEF;
+        }
+
+        header {
+            position: absolute;
+            top: 500px;
+            left: 100px;
+            font-family: Arial;
+            color: white;
+        }
+
+        header>h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header>p>span {
+            color: lawngreen;
+        }
+
+        header>p {
+            margin: 0;
+        }
+
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        h1.espacamento__texto {
+            animation: espacamentoDeTexto 2s linear infinite;
+        }
+
+        @keyframes espacamentoDeTexto {
+            0% {
+                letter-spacing: 0rem;
+                opacity: 1;
+            }
+
+            50% {
+                letter-spacing: 1rem;
+                opacity: 0.5;
+            }
+
+            100% {
+                letter-spacing: 2rem;
+                opacity: 0;
+            }
+        }
+
+        h1.encurtamento__texto {
+            animation: encurtamentoDeTexto 2s linear infinite;
+        }
+
+        @keyframes encurtamentoDeTexto {
+            0% {
+                letter-spacing: 2rem;
+                opacity: 0;
+            }
+
+            50% {
+                letter-spacing: 1rem;
+                opacity: 0.5;
+            }
+
+            100% {
+                letter-spacing: 0rem;
+                opacity: 1;
+            }
+        }
+
+        h1.encurtamento-fechamento__texto {
+            animation: espacamentoFechamentoDeTexto 3s linear infinite;
+        }
+
+        @keyframes espacamentoFechamentoDeTexto {
+            0% {
+                letter-spacing: 0;
+            }
+
+            25% {
+                letter-spacing: 1rem;
+                opacity: 0.5;
+            }
+
+            50% {
+                letter-spacing: 2rem;
+                opacity: 0;
+            }
+
+            75% {
+                letter-spacing: 1rem;
+                opacity: 0.5;
+            }
+
+            100% {
+                letter-spacing: 0rem;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MSK Institute</h2>
+        <p>Best for learn <span>Coding</span> in Shikohabad</p>
+    </header>
+
+    <h1 class="espacamento__texto">
+        @mskinstitute
+    </h1>
+    <h1 class="encurtamento__texto">
+        @mskinstitute
+    </h1>
+    <h1 class="encurtamento-fechamento__texto">
+        @mskinstitute
+    </h1>
+</body>
+
+</html>

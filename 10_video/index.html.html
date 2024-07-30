@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #002060;
+            color: white;
+        }
+
+        header {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            font-family: Arial;
+        }
+
+        header>h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header>p>span {
+            color: lawngreen;
+        }
+
+        header>p {
+            margin: 0;
+        }
+
+        .box {
+            margin: 0 auto;
+            margin-top: 200px;
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+        }
+
+        .buttons {
+            width: 80%;
+            height: 50px;
+            display: flex;
+            gap: 10px 10px;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #002060;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 65px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MSK Institute</h2>
+        <p>Best for learn <span>Coding</span> in Shikohabad</p>
+    </header>
+
+
+    <div class="box mt100">
+        <img id="myImage" src="seen_front.png" style="width:200px">
+        <br>
+        <div class="buttons">
+            <button onclick="changeImage('seen_left.png')">Left</button>
+            <button onclick="changeImage('hi.png')">Hi</button>
+            <button onclick="changeImage('seen_right.png')">Right</button>
+            <button onclick="changeImage('smile.png')">Smile</button>
+            <button onclick="changeImage('sad.png')">Sad</button>
+            <button onclick="changeImage('Winked.png')">Winked</button>
+        </div>
+    </div>
+
+
+    <script>
+        function changeImage(imageName) {
+            document.getElementById('myImage').src = `${imageName}`;
+            setTimeout(function () {
+                document.getElementById('myImage').src = `seen_front.png`;
+            }, 1000); // 1000 milliseconds = 1 seconds
+        }
+    </script>
+
+</body>
+
+</html>

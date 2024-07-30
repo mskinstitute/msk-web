@@ -1,0 +1,89 @@
+body {
+    background-color: #002060;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 70px;
+    width: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    width: 475px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.operator {
+    background-color: black;
+    color: white;
+}
+
+#clear {
+    background-color: red;
+}
+
+#result {
+    width: 90%;
+}
+
+header {
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+    font-family: Arial;
+}
+
+header>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header>p>span {
+    color: lawngreen;
+}
+
+header>p {
+    margin: 0;
+}
+
+@media all and (min-width:100px) and (max-width:500px) {
+    input {
+
+        height: 50px;
+        width: 70px;
+        margin: 0px;
+    }
+
+    table {
+        width: 295px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    #result {
+        width: 98%;
+    }
+}
