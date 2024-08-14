@@ -61,7 +61,7 @@
             z-index: 1;
         }
 
-        a .aguado {
+        a .frame {
             position: absolute;
             top: -80px;
             left: 0;
@@ -72,8 +72,8 @@
             transition: .5s;
         }
 
-        a .aguado::after,
-        a .aguado::before {
+        a .frame::after,
+        a .frame::before {
             content: '';
             width: 200%;
             height: 200%;
@@ -84,23 +84,23 @@
             background: #000;
         }
 
-        a .aguado::before {
+        a .frame::before {
             border-radius: 45%;
             background: rgba(20, 20, 20, 1);
-            animation: ondas 5s linear infinite;
+            animation: sumit 5s linear infinite;
         }
 
-        a .aguado::after {
+        a .frame::after {
             border-radius: 40%;
             background: rgba(20, 20, 20, .5);
-            animation: ondas 10s linear infinite;
+            animation: sumit 10s linear infinite;
         }
 
-        a:hover .aguado {
+        a:hover .frame {
             top: -120px;
         }
 
-        @keyframes ondas {
+        @keyframes sumit {
             0% {
                 transform: translate(-50%, -75%) rotate(0deg);
             }
@@ -120,7 +120,7 @@
 
     <a href="#">
         <span>Loading</span>
-        <div class="aguado"></div>
+        <div class="frame"></div>
     </a>
 </body>
 

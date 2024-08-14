@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Text Background Color - @mskinstitutes</title>
+    <style>
+        header {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            font-family: Arial;
+        }
+
+        header>h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header>p>span {
+            color: red;
+        }
+
+        header>p {
+            margin: 0;
+        }
+
+        #background {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, .1);
+            background: linear-gradient(to right,
+                    rgb(76, 217, 105),
+                    rgb(52, 170, 220),
+                    rgb(88, 86, 217),
+                    rgb(255, 45, 83),
+                    rgb(255, 45, 83),
+                    rgb(88, 86, 217),
+                    rgb(52, 170, 220),
+                    rgb(76, 217, 105));
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 4.5em;
+            text-align: left;
+            animation: sTransition 10s linear infinite;
+        }
+
+        @keyframes sTransition {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>MSK Institute</h2>
+        <p>Best for learn <span>Coding</span> in Shikohabad</p>
+    </header>
+
+    <h1 id="background">@mskinstitute</h1>
+</body>
+
+</html>
