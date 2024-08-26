@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Drum Kits</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Drum Kits </h1>
+
+    <div class="container">
+        <button onclick="playSong('crash')" class="crash">
+            crash</button>
+        <button onclick="playSong('kick')" class="kick">
+            kick</button>
+        <button onclick="playSong('snare')" class="snare">
+            snare</button>
+        <button onclick="playSong('tom')" class="tom">
+            tom</button>
+    </div>
+
+
+    <script>
+        function playSong(songName) {
+            let audio_tag = document.createElement('audio');
+            audio_tag.src = "sounds/" + songName + ".mp3";
+            audio_tag.play();
+        }
+    </script>
+
+</body>
+
+</html>
