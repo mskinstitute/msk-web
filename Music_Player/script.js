@@ -29,19 +29,16 @@ function loadSong(song) {
     cover.src = song.cover;
 }
 
-// Play song
 function playSong() {
     audio.play();
     playBtn.innerText = '⏸️';
 }
 
-// Pause song
 function pauseSong() {
     audio.pause();
     playBtn.innerText = '⏯️';
 }
 
-// Previous song
 function prevSong() {
     songIndex--;
     if (songIndex < 0) {
@@ -51,7 +48,6 @@ function prevSong() {
     playSong();
 }
 
-// Next song
 function nextSong() {
     songIndex++;
     if (songIndex > songs.length - 1) {
@@ -88,8 +84,6 @@ playBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
-
 audio.addEventListener('timeupdate', updateProgress);
 progressContainer.addEventListener('click', setProgress);
-
 audio.addEventListener('ended', nextSong);

@@ -35,16 +35,18 @@ function formatTime(elapsedTime) {
     (milliseconds > 9 ? milliseconds : "0" + milliseconds)
   );
 }
+
 function stopTimer() {
   clearInterval(timerInterval);
   startButtonEl.disabled = false;
   stopButtonEl.disabled = true;
 }
+
 function resetTimer() {
   clearInterval(timerInterval);
 
   elapsedTime = 0;
-  timerEl.textContent = "00:00:00";
+  timerEl.textContent = "00:00:00:00";
 
   startButtonEl.disabled = false;
   stopButtonEl.disabled = true;
