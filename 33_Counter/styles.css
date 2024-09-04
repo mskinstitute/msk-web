@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-family: Arial;
+}
+
+header>h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+header>p>span {
+  color: rgb(72, 255, 0);
+}
+
+header>p {
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  margin-top: 200px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.value {
+  font-size: 6rem;
+}
