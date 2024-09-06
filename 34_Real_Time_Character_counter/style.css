@@ -9,6 +9,26 @@ body {
   font-family: cursive;
 }
 
+header {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-family: Arial;
+}
+
+header>h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+header>p>span {
+  color: rgb(72, 255, 0);
+}
+
+header>p {
+  margin: 0;
+}
+
 .container {
   background-color: lightpink;
   width: 400px;
