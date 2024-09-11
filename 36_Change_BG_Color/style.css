@@ -1,0 +1,37 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-family: Arial;
+}
+
+header>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header>p>span {
+    color: red;
+}
+
+header>p {
+    margin: 0;
+}
+
+input {
+    width: 350px;
+    height: 80px;
+    border: 2px solid;
+    margin: 0 30%;
+    margin-top: 300px;
+    padding-left: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
