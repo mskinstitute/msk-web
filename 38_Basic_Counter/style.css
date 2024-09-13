@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: Arial;
+}
+
+header>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header>p>span {
+    color: red;
+}
+
+header>p {
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.container h2 {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.container button {
+    width: 150px;
+    height: 60px;
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
