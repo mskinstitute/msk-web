@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: Arial;
+}
+
+header>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header>p>span {
+    color: red;
+}
+
+header>p {
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    height: 180px;
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.container p {
+    background-color: whitesmoke;
+    border-radius: 20px 20px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
+.container button {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
