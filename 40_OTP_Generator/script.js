@@ -1,6 +1,5 @@
 
 function click_btn() {
-    var a = Math.random() * (9999 - 1) + 1;
-    var b = Math.floor(a);
-    document.getElementById('result').value = b;
+    var otp = Math.floor(1000 + Math.random() * 9000); // Always 4 digits
+    document.getElementById('result').value = otp;
 }
