@@ -1,0 +1,143 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #002060;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    margin: 50px 0;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    color: #ffcc00; /* MSK Branding Yellow */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+header p span {
+    color: white; /* Highlight "MSK Institute" */
+    font-weight: bold;
+}
+
+/* Task Container Styling */
+.task-container {
+    background-color: white;
+    color: #002060;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #002060;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-container button {
+    width: 150px;
+    padding: 10px;
+    background-color: #002060;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.task-container button:hover {
+    background-color: #ffcc00; /* Button hover MSK yellow */
+    color: #002060; /* Text to match branding */
+}
+
+/* Task List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f2f2f2;
+    color: #002060;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+li button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #ffcc00; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
