@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002060;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: Arial;
+}
+
+header>h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header>p>span {
+    color: red;
+}
+
+header>p {
+    margin: 0;
+}
+
+
+/* Button Container Styling */
+.button-container {
+    text-align: center;
+}
+
+/* Animated Button Styling */
+.animated-btn {
+    background-color: #ffcc00;
+    color: #002060;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.animated-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #002060;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: width 0.4s, height 0.4s;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.animated-btn:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.animated-btn:hover {
+    background-color: #002060;
+    color: #ffcc00;
+}
+
+.animated-btn span {
+    position: relative;
+    z-index: 1;
+}
